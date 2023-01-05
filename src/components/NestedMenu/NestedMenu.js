@@ -73,6 +73,10 @@ const defaultMenuItems = [
             label: "header_services_social_smm_douyin",
           },
           {
+            name: "portfolio-details",
+            label: "header_services_social_smm_douyin",
+          },
+          {
             name: "portfolio-details-2",
             label: "header_services_social_smm_xiaohongshu",
           },
@@ -117,7 +121,22 @@ const MenuItem = ({
             open ? "active" : ""
           }`}
         >
-          <span>{t(label)}</span>
+          {name !== "services" ? (
+            <Link href={`/${name}`}>
+              <a
+                onClick={() => {
+                  if (gContext.visibleOffCanvas) {
+                    gContext.toggleOffCanvas();
+                  }
+                }}
+              >
+                <span>{t(label)}</span>
+              </a>
+            </Link>
+          ) : (
+            <span>{t(label)}</span>
+          )}
+
           <span>{open ? <FaAngleDown /> : <FaAngleRight />}</span>
         </ListGroup.Item>
       ) : (
