@@ -20,6 +20,7 @@ const ContactForm = ({ theme = "dark", ...rest }) => {
       <input type="hidden" name="form-name" value="contact" />
       <div className="mt-4">
         <Input
+          id="contact_placeholder1"
           type="text"
           placeholder={t("contact_placeholder1")}
           required
@@ -28,6 +29,7 @@ const ContactForm = ({ theme = "dark", ...rest }) => {
       </div>
       <div className="mt-4">
         <Input
+          id="contact_placeholder2"
           type="text"
           placeholder={t("contact_placeholder2")}
           required
@@ -36,6 +38,7 @@ const ContactForm = ({ theme = "dark", ...rest }) => {
       </div>
       <div className="mt-4">
         <Input
+          id="contact_placeholder3"
           type="email"
           placeholder={t("contact_placeholder3")}
           required
@@ -44,6 +47,7 @@ const ContactForm = ({ theme = "dark", ...rest }) => {
       </div>
       <div className="mt-4">
         <Input
+          id="contact_placeholder4"
           type="text"
           placeholder={t("contact_placeholder4")}
           required
@@ -52,14 +56,15 @@ const ContactForm = ({ theme = "dark", ...rest }) => {
       </div>
       <div className="mt-4 ">
         <TextArea
+          id="contact_placeholder5"
           rows={4}
-          placeholder={t("contact_placeholder5s")}
+          placeholder={t("contact_placeholder5")}
           required
           name="message"
         />
       </div>
       <div className="mt-4 mt-lg-5">
-        <Button arrowRight variant="primary" type="submit">
+        <Button id="contact_button" arrowRight variant="primary" type="submit">
           {t("contact_button")}
         </Button>
       </div>

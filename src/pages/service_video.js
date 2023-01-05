@@ -14,8 +14,8 @@ import imgS5 from "../assets/image/jpg/details/details-14.jpg";
 import imgS6 from "../assets/image/jpg/details/details-13.jpg";
 import { device } from "../utils";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import LinkStyled from "../components/Core/LinkContact";
 import { useTranslation } from "next-i18next";
+import LinkStyled from "../components/Core/LinkContact";
 
 export async function getServerSideProps({ locale }) {
   return {
@@ -38,8 +38,8 @@ export async function getServerSideProps({ locale }) {
   };
 }
 
-const WorkSingle = () => {
-  const { t } = useTranslation("service_smm");
+const ServiceVideo = () => {
+  const { t } = useTranslation("service_video");
   return (
     <>
       <PageWrapper darkTheme>
@@ -48,7 +48,7 @@ const WorkSingle = () => {
             <Row className="justify-content-center text-center">
               <Col lg="8">
                 <Box>
-                  <Title className="my-4">{t("smm_title")}</Title>
+                  <Title className="my-4">{t("video_title")}</Title>
                 </Box>
               </Col>
             </Row>
@@ -62,27 +62,14 @@ const WorkSingle = () => {
         <div className="mt-lg-3">
           <Section>
             <Container>
-              <Title variant="secSm" className="mb-5 pb-lg-4">
-                {t("smm_subTitle1")}
-              </Title>
               <Row>
-                <Text></Text>
-                <Text>{t("smm_subTitle1_text2")}</Text>
-                <Text>{t("smm_subTitle1_text3")}</Text>
+                <Text>{t("video_text1")}</Text>
+                <Text>{t("video_text2")}</Text>
+                <Text>{t("video_text3")}</Text>
+                <Text>{t("video_text4")}</Text>
               </Row>
             </Container>
           </Section>
-          <Container>
-            <Title variant="secSm" className="mb-5 pb-lg-4">
-              {t("smm_subTitle2")}
-            </Title>
-            <Row>
-              <Text>{t("smm_subTitle2_text1")}</Text>
-              <Text>{t("smm_subTitle2_text2")}</Text>
-              <Text>{t("smm_subTitle2_text3")}</Text>
-              <Text>{t("smm_subTitle2_text4")}</Text>
-            </Row>
-          </Container>
         </div>
 
         <Box py={4}>
@@ -92,4 +79,4 @@ const WorkSingle = () => {
     </>
   );
 };
-export default WorkSingle;
+export default ServiceVideo;

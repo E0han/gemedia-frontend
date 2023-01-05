@@ -12,7 +12,7 @@ import imgSignLight from "../../assets/image/png/signature.png";
 import { useTranslation } from "next-i18next";
 
 const WhyGEMedia = ({ hero = true, bg = "light", ...rest }) => {
-  const { t } = useTranslation("about");
+  const { t } = useTranslation("whygemedia");
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -41,7 +41,7 @@ const WhyGEMedia = ({ hero = true, bg = "light", ...rest }) => {
             <Col lg="8">
               <div className="pl-lg-4 pt-5 pt-lg-0">
                 <Title color="dark" variant="secSm">
-                  Why GEMedia
+                  {t("whygemedia_title")}
                 </Title>
                 <Text
                   color="dark"
@@ -50,13 +50,13 @@ const WhyGEMedia = ({ hero = true, bg = "light", ...rest }) => {
                     line-height: 1.5;
                   `}
                 >
-                  {t("about_banner1")}
+                  {t("whygemedia_text1")}
                 </Text>
                 <Text color="dark" className="mt-4">
-                  {t("about_banner2")}
+                  {t("whygemedia_text2")}
                 </Text>
                 <div className="mt-4">
-                  <Text color="dark">{t("about_banner3")}</Text>
+                  <Text color="dark">{t("whygemedia_text3")}</Text>
                 </div>
                 <div className="mt-5"></div>
               </div>
@@ -69,7 +69,7 @@ const WhyGEMedia = ({ hero = true, bg = "light", ...rest }) => {
 
             <Col lg="12">
               <Title color="dark" variant="secSm">
-                Our Clients
+                {t("whygemedia_clients_title")}
               </Title>
               <Carousel
                 responsive={responsive}

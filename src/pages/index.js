@@ -10,6 +10,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import About from "../sections/others/About";
 import WhyGEMedia from "../sections/others/WhyGEMedia";
 import VideoShowCase from "../sections/others/VideoShowCase";
+import Copywriting from "../sections/others/Copywriting";
 
 export async function getServerSideProps({ locale }) {
   return {
@@ -21,6 +22,11 @@ export async function getServerSideProps({ locale }) {
         "footer",
         "homepage",
         "header",
+        "service_video",
+        "service_smm",
+        "copywriting",
+        "whygemedia",
+        "service_kol",
       ])),
       // Will be passed to the page component as props
     },
@@ -36,7 +42,7 @@ export function IndexPage() {
       <PageWrapper>
         <Hero />
         <WhyGEMedia />
-        <VideoShowCase />
+        <Copywriting />
         <Contact />
       </PageWrapper>
     </>

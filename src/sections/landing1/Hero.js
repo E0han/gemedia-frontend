@@ -24,8 +24,8 @@ const Hero = () => {
           <Row className="align-items-center">
             <Col lg="7" className="mb-5 mb-lg-0">
               <Box>
-                <Title>{t("index_banner1")}</Title>
-                <Title variant="hero" className="ml-5">
+                <Title id={"index_banner1"}>{t("index_banner1")}</Title>
+                <Title id={"index_banner2"} variant="hero" className="ml-5">
                   {t("index_banner2")}
                 </Title>
 
