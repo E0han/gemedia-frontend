@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -22,6 +22,7 @@ import imgS6 from "../assets/image/jpg/details/details-13.jpg";
 import { device } from "../utils";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import GlobalContext from "../context/GlobalContext";
 
 export async function getServerSideProps({ locale }) {
   return {
@@ -45,6 +46,7 @@ export async function getServerSideProps({ locale }) {
 }
 
 const WorkSingle = () => {
+  const gContext = useContext(GlobalContext);
   const { t } = useTranslation("service_kol");
   return (
     <>
