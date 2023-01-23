@@ -25,7 +25,7 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
       <Section hero={hero} bg={bg} {...rest}>
         <Container>
           <Row className="justify-content-center">
-            <Col lg="6">
+            {/* <Col lg="6">
               <Box className="pr-lg-5">
                 <Title color="light" variant="secSm" mb="2rem">
                   {t("contact_title")}
@@ -35,12 +35,18 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
                 </Text>
                 <ContactForm theme="dark" />
               </Box>
-            </Col>
-            <Col lg="6">
-              <ContactCard className="p-5 ml-lg-5">
+            </Col> */}
+            <Col lg="6" className="p-0">
+            <Title color="light" variant="secSm" mb="2rem">
+                  {t("contact_title")}
+                </Title>
+                <Text color="light" mb="2.75rem">
+                  {t("contact_banner1")}
+                </Text>
+              <ContactCard className="p-5 m-0">
                 <div>
                   <Text color="light">{t("contact_email_banner")}</Text>
-
+                  
                   <a
                     href="mailto:marketing@gemsolution.com.au"
                     className="font-weight-bold"
@@ -52,8 +58,8 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
                   <Text color="light">{t("contact_phone_banner")}</Text>
 
                   <div>
-                    <a href="tel:+610000000" className="font-weight-bold">
-                      <Span color="primary">000000000</Span>
+                    <a href="tel:+61410966868" className="font-weight-bold">
+                      <Span color="primary">Chat Now</Span>
                     </a>
                   </div>
                 </div>
@@ -61,7 +67,7 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
                   <Text color="light">{t("contact_address_banner")}</Text>
 
                   <div>
-                    <a href="tel:+610000000" className="font-weight-bold">
+                    <a href="https://goo.gl/maps/P37ShfYpb4UAKi7t9" className="font-weight-bold">
                       <Span color="primary">
                         80 Grote Street, Office 6S, Level 1, 5000，SA
                       </Span>

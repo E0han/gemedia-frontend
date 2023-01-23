@@ -27,7 +27,7 @@ export const menuItems = [
         label: "header_services_social_media_management",
       },
 
-      { name: "contact", label: "header_services_video_making" },
+      { name: "service_vcd", label: "header_services_video_making" },
     ],
   },
 ];

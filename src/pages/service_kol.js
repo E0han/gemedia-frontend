@@ -19,6 +19,7 @@ import imgS3 from "../assets/image/jpg/details/details-10.jpg";
 import imgS4 from "../assets/image/jpg/details/details-9.jpg";
 import imgS5 from "../assets/image/jpg/details/details-14.jpg";
 import imgS6 from "../assets/image/jpg/details/details-13.jpg";
+import headerLogo from "../assets/image/pageHeader/2.png";
 import { device } from "../utils";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -58,8 +59,8 @@ const WorkSingle = () => {
               </Col>
             </Row>
 
-            <Box pt={["4rem", null, null, "6.25rem"]}>
-              <img src={imgWorkCover} alt="" className="img-fluid w-100" />
+            <Box pt={["4rem", null, null, "4rem"]}>
+              <img src={headerLogo} alt="" className="img-fluid w-80 ml-5" />
             </Box>
           </Container>
         </Section>
