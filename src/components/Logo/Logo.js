@@ -1,14 +1,21 @@
 import React from "react";
 import Link from "next/link";
+import { useContext } from "react";
 import { Title } from "../Core";
+import GlobalContext from "../../context/GlobalContext";
+import homeLogoB from "../../assets/image/pageHeader/GEMedia_black.png"
+import homeLogoW from "../../assets/image/pageHeader/GEMedia_white.png"
 
-const Logo = ({ color = "front", height, className = "", ...rest }) => {
+
+const Logo = ({ color, height, className = "", ...rest }) => {
+  const gContext = useContext(GlobalContext);
   return (
     <Link href="/">
       <a className={`${className}`} {...rest}>
         
         <Title color={color} variant="cardLg" className="mb-0">
-        <img src="https://www.gemsolution.com.au/_next/static/images/gemlogo-e71147ebd85095c1937c6a09004e4343.gif" height={"20px"}/> GEMedia
+        <img src={gContext.theme.bodyDark ? homeLogoW : homeLogoB} height={"20px"}/>
+        
         </Title>
       </a>
     </Link>

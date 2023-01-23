@@ -125,10 +125,11 @@ const Layout = ({ children, pageContext }) => {
       <ThemeProvider
         theme={
           gContext.theme.bodyDark ? getTheme(modes.dark) : getTheme(modes.light)
+          // getTheme(modes.dark)
         }
       >
         <ThemeSwitch />
-        <LanguageSwitch />
+        {/* <LanguageSwitch /> */}
         <GlobalStyle />
         <Head>
           <title>GEMedia</title>

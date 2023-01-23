@@ -6,6 +6,7 @@ import Contact from "../landing1/Contact";
 import { Section, Title, Text, Span, ButtonIcon } from "../../components/Core";
 import imgPhoto from "../../assets/image/jpg/portfolio-about.jpg";
 import imgSignLight from "../../assets/image/png/signature.png";
+import headerLogo from "../../assets/image/pageHeader/GEMedia_blue.png"
 
 import { useTranslation } from "next-i18next";
 
@@ -34,6 +35,7 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                 <Title color="light" variant="secSm">
                   {t("about_title")}
                 </Title>
+                <img src={headerLogo} />
                 <Text
                   color="light"
                   className="mt-3 mt-lg-5"

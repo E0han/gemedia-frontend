@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 const GlobalContext = React.createContext();
 const themeConfigDefault = {
-  headerDark: false,
-  bodyDark: false,
-  footerDark: false,
+  headerDark: true,
+  bodyDark: true,
+  footerDark: true,
 };
 
 const GlobalProvider = ({ children }) => {

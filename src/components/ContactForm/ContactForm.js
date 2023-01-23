@@ -53,7 +53,7 @@ const ContactForm = ({ theme = "dark", ...rest }) => {
       <div className="mt-4 ">
         <TextArea
           rows={4}
-          placeholder={t("contact_placeholder5s")}
+          placeholder={t("contact_placeholder5")}
           required
           name="message"
         />

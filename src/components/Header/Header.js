@@ -66,7 +66,7 @@ const Menu = styled.ul`
         padding-left: 18px !important;
         padding-right: 18px !important;
 
-        text-transform: lowercase;
+        ${'' /* text-transform: lowercase; */}
 
         &.dropdown-toggle:after {
           margin-left: 10px;
@@ -147,7 +147,7 @@ const MenuDropdown = styled.ul`
       display: flex;
       align-items: center;
       font-weight: 700;
-      text-transform: lowercase;
+      ${'' /* text-transform: lowercase; */}
       &.dropdown-toggle::after {
         margin-left: 10px;
         position: relative;
@@ -262,7 +262,8 @@ const Header = ({ isDark }) => {
           <nav className="navbar px-0 px-md-3 site-navbar offcanvas-active navbar-expand-lg navbar-light">
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo">
-              <Logo color={isDark ? "light" : "dark"} />
+              {/* <Logo color={isDark ? "light" : "dark"} /> */}
+              <Logo />
             </div>
             <div className="collapse navbar-collapse">
               <div className="navbar-nav ml-lg-auto mr-3">

@@ -13,7 +13,7 @@ const NestedMenuContainer = styled.div`
     color: ${({ theme }) => theme.colors.dark} !important;
     transition: all 0.3s ease-out;
     font-weight: 700;
-    text-transform: lowercase;
+    ${'' /* text-transform: lowercase; */}
 
     &:hover,
     &:active {
@@ -24,7 +24,7 @@ const NestedMenuContainer = styled.div`
 
   .list-group-item {
     font-weight: 700;
-    text-transform: lowercase;
+    ${'' /* text-transform: lowercase; */}
     color: ${({ theme }) => theme.colors.dark};
     &:hover,
     &:active,
@@ -197,7 +197,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
                   }
                 }}
               >
-                {t("header_home")}
+                {(t("header_home"))}
               </a>
             </Link>
           }
